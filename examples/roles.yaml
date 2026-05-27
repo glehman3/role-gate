@@ -1,0 +1,24 @@
+permissions:
+  - read:records
+  - write:records
+  - delete:records
+  - manage:users
+
+critical_permissions:
+  - delete:records
+  - manage:users
+
+roles:
+  admin:
+    permissions:
+      - read:records
+      - write:records
+      - delete:records
+      - manage:users
+  editor:
+    inherits: viewer
+    permissions:
+      - write:records
+  viewer:
+    permissions:
+      - read:records

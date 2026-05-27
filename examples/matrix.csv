@@ -1,0 +1,9 @@
+role,permission,expected
+admin,read:records,allow
+admin,delete:records,allow
+editor,write:records,allow
+editor,delete:records,deny
+viewer,read:records,allow
+viewer,write:records,deny
+admin,manage:users,allow
+viewer,manage:users,deny

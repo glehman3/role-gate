@@ -1,0 +1,10 @@
+permissions:
+  - read:records
+
+roles:
+  parent:
+    inherits: child
+    permissions: []
+  child:
+    inherits: parent
+    permissions: []
